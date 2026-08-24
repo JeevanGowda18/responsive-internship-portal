@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Board</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Explore Internships</h1>
+  </header>
+
+  <main>
+    <!-- Controls Section -->
+    <section class="controls-section" aria-label="Filters and Search">
+      <div class="field-group">
+        <label for="search-input">Search Title or Company</label>
+        <input type="search" id="search-input" placeholder="e.g. Frontend Developer, Google...">
+      </div>
+      <div class="field-group">
+        <label for="domain-filter">Filter by Domain</label>
+        <select id="domain-filter">
+          <option value="all">All Domains</option>
+          <option value="engineering">Engineering</option>
+          <option value="design">Design</option>
+          <option value="marketing">Marketing</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Results Count & Status -->
+    <div id="status-message" aria-live="polite" class="status-message"></div>
+
+    <!-- Internship Card Grid -->
+    <section id="internships-grid" class="grid-container" aria-label="Internship Listings">
+      <!-- Cards rendered via JS -->
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
